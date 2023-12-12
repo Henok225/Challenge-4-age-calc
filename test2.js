@@ -40,9 +40,11 @@ if(dayInput === ""){
     console.log("empty field");
     document.querySelector('.day-err').innerText = "This field is required";
     dayInput1.style.borderColor = 'red';
+    document.querySelector('.day-tit').style.color = "red";
     document.querySelector('.result-year-num').innerText = "--";
     document.querySelector('.result-month-num').innerText = "--";
     document.querySelector('.result-day-num').innerText = "--";
+    
 }
 else if(dayInput == 0 || dayInput > 31 || dayInput < 0){
     document.querySelector('.day-err').innerText = "Must be a valid day";
@@ -62,6 +64,7 @@ if(monthInput === ""){
     
     document.querySelector('.month-err').innerText = "This field is required";
     monthInput1.style.borderColor = 'red';
+    document.querySelector('.month-tit').style.color = "red";
     document.querySelector('.result-year-num').innerText = "--";
     document.querySelector('.result-month-num').innerText = "--";
     document.querySelector('.result-day-num').innerText = "--";
@@ -84,6 +87,7 @@ if(yearInput === ""){
     
     document.querySelector('.year-err').innerText = "This field is required";
     yearInput1.style.borderColor = 'red';
+    document.querySelector('.year-tit').style.color = "red";
     document.querySelector('.result-year-num').innerText = "--";
     document.querySelector('.result-month-num').innerText = "--";
     document.querySelector('.result-day-num').innerText = "--";
@@ -130,10 +134,10 @@ dayInput1.style.borderColor = 'red';
     document.querySelector('.day-err').innerText = "Must be a valid date";
     document.querySelector('.result-year-num').innerText = "--";
     document.querySelector('.result-month-num').innerText = "--";
-    document.querySelector('.result-day-num').innerText = "--"; 
+    document.querySelector('.result-day-num').innerText = "--";
     yearInput1.style.borderColor = 'red';
 monthInput1.style.borderColor = 'red';
-dayInput1.style.borderColor = 'red';    
+dayInput1.style.borderColor = 'red';
 }
 else{
     t4 = 1;
@@ -164,18 +168,18 @@ else{
         else if(monthInput == 2){
             dOut = dOut + 29;
             mOut = mOut - 1;
-            document.querySelector('.month-err').innerText = "";   
+            document.querySelector('.month-err').innerText = "";
         }
         else{
             document.querySelector('.month-err').innerText = "Must be a valid month";
-        }    
+        }
     }
     
     else{
     document.querySelector('.day-err').innerText = "";
     }
     
-    test2 = "finished";    
+    test2 = "finished";
 }
 ////////////////////////////////////////////////////////
 
@@ -183,7 +187,7 @@ else{
 // month
 if(mOut < 0){
     mOut += 12;
-    yOut = yOut - 1;  
+    yOut = yOut - 1;
 }
 else{
 document.querySelector('.month-err').innerText = "";
@@ -194,7 +198,7 @@ test3 = "finished";
 if(test3 == "finished"){
     document.querySelector('.result-month-num').innerText = mOut;
     document.querySelector('.result-year-num').innerText = yOut;
-    document.querySelector('.result-day-num').innerText = dOut;  
+    document.querySelector('.result-day-num').innerText = dOut;
 }
 
 }
