@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="test2.js"></script>
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main class="box">
+<div class="times">
+  <div class="days">
+    <p class="day-tit">DAY</p>
+    <input type="number" name="" id="day-input" placeholder="DD" >
+    <p class="day-err"><span id="d-err">This field is required</span></p>
+  </div>
+  <div class="months">
+    <p class="month-tit">MONTH</p>
+    <input type="number" name="" id="month-input" placeholder="MM">
+    <p class="month-err"><span id="m-err"></span></p>
+  </div>
+  <div class="years">
+    <p class="year-tit">YEAR</p>
+    <input type="number" name="" id="year-input" placeholder="YYYY" >
+    <p class="year-err"><span id="y-err"></span></p>
+  </div>
+</div>
+<hr color="#dbdbdb" size="0.5em"><img src="assets/images/icon-arrow.svg" alt="" class="see-result" onclick="calculate()" >
+
+<div class="result">
+  <p class="result-year"><span class="result-year-num cmn-clr">--</span>years</p>
+  <p class="result-month"><span class="result-month-num cmn-clr">--</span>months</p>
+  <p class="result-day"><span class="result-day-num cmn-clr">--</span>days</p>
+</div>
+
+
+</main>
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
